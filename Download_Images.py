@@ -9,7 +9,7 @@ def Download_Images(url, dir):
   img_file = image['src'].lstrip('http://')
   img_file = os.path.join(dir,\
   img_file.replace('/', '_'))
-  print ('[+] Saving ' + str(filename))
+  print ('Saving ' + str(filename))
   data = ab.open(image['src']).read()
   ab.back()
   save = open(filename, 'wb')
